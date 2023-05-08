@@ -1,0 +1,38 @@
+# /srv/airfill/config/afi_conf.yml                                                                                  
+#
+# airfill 5G RAN AFI config file
+# www.airfill.io 
+#
+# Set global log parameters
+# default is info and size is 5MB
+#
+log_level: INFO
+log_size: 5242880
+
+# gNB Baseband Unit (BU) IP addresses list for status monitoring     
+# gnb_ip_addresses:
+#  - 10.20.1.10 
+#  - 10.20.1.11
+#  - ...
+gnb_ip_addresses:
+  - 10.20.1.10
+#
+#
+# -- Below are for AFI Prometheus docker containers 
+#
+# gNB Status monitoring - Prometheus metrics related
+#
+# Status info pull interval in seconds
+status_update_interval: 45
+# Status metrics scrape port - Must match Prometheus server scrape_config
+status_metric_port: 9080
+#
+# gNB KPI - Prometheus metrics related
+#
+# KPI server listening port - Must match BU KPI server config 
+kpi_server_port: 8081
+# KPI metrics scrape port - Must match Prometheus server scrape_config
+kpi_metric_port: 9081
+#
+# -- End AFI Prometheus containers 
+#
