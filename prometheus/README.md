@@ -1,4 +1,4 @@
-![image](https://airfill.io/afgit.png)
+![image](https://airfill.io/afgit15.png)
 ## Quick start guide for AFI Prometheus containers
 ---
 **Note that this guide is for testing purposes and is not meant for production deployment.**
@@ -13,7 +13,7 @@ All AFI containers can be configured using [afi_conf.yml](https://github.com/air
 #### Run gNB Status container
 Edit the afi_conf.yml and enter the IP addresses of gNBs that you want to monitor. Optionally, you can modify status update interval and Prometheus scrape port also.
 
-Download [run_afi_sts_prometheus.sh](https://github.com/airfill/afi/blob/main/prometheus/run_afi_sts_prometheus.sh) and start the status container by:
+Download [run_afi_sts_prometheus.sh](https://github.com/airfill/afi/blob/main/prometheus/run_afi_sts_prometheus.sh) (if it is not executable, make it by *chmod +x run_afi_sts_prometheus.sh*) and start the status container by:
 ```
 $ ./run_afi_sts_prometheus.sh <path-of-afi_conf.yml>
 ```
@@ -41,7 +41,7 @@ $ ./run_afi_sts_prometheus.sh <path-of-afi_conf.yml>
 #### Run gNB KPI container
 Edit the afi_conf.yml if you need to modify gNB KPI server port (this needs to match gNB configuration) or Prometheus scrape port.
 
-Download [run_afi_kpi_prometheus.sh](https://github.com/airfill/afi/blob/main/prometheus/run_afi_kpi_prometheus.sh) and start the status container by:
+Download [run_afi_kpi_prometheus.sh](https://github.com/airfill/afi/blob/main/prometheus/run_afi_kpi_prometheus.sh) (if it is not executable, make it by *chmod +x run_afi_kpi_prometheus.sh*) and start the status container by:
 ```
 $ ./run_afi_kpi_prometheus.sh <path-of-afi_conf.yml>
 ```
