@@ -1,4 +1,4 @@
-![image](https://airfill.io/afgit.png)
+![image](https://airfill.io/afgit15.png)
 ## AI-First Interface (AFI) SW solution for airfill 5G RAN
 
 AFI is designed to be intuitive, agile, scalable, and easy-to-deploy,
